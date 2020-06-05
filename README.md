@@ -3,15 +3,17 @@ Aim of this package is to keep only bundles that are critical to your applicatio
 # bundle size(Minified + Gzipped) <= 1kb
 with its bundle size less than 1kb and custom toast components it add only implementation of toast, but not the styles.
 
+> This is a custom fork of the original react-tiny-toast which removes all base styling from the toast-item container except the animations, reverses the stacking order of toasts.
+
 # Installation
 Install this package by running on your project root directory.
 
-`yarn install react-tiny-toast`
+`yarn install @owaiswiz/react-tiny-toast`
 
 # Usage
 Once installed, render this component onto your root component.
 ```
-import { ToastContainer } from 'react-tiny-toast';
+import { ToastContainer } from '@owaiswiz/react-tiny-toast';
 
 const App = () => {
   return (
@@ -25,7 +27,7 @@ const App = () => {
 once above step is done. you can call in the toast from anywhere in your application(Make sure `ToastContainer` is in your component tree).
 ```
 import React, { useEffect } from 'react';
-import { toast } from 'react-tiny-toast';
+import { toast } from '@owaiswiz/react-tiny-toast';
 
 const ChildComponent = () => {
   useEffect(() => {
