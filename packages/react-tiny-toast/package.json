@@ -1,0 +1,60 @@
+{
+  "name": "@owaiswiz/react-tiny-toast",
+  "version": "0.2.3",
+  "private": false,
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "@babel/react"
+    ]
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "scripts": {
+    "start": "rm -rf lib && mkdir lib && npx babel src --out-dir lib --copy-files --watch",
+    "build": "rm -rf lib && mkdir lib && npx babel src/* --out-dir lib --copy-files",
+    "publish": "rm -rf lib && mkdir lib && npx babel src/* --out-dir lib --copy-files && npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owaiswiz/react-tiny-toast.git",
+    "directory": "packages/react-tiny-toast"
+  },
+  "bugs": {
+    "url": "https://github.com/owaiswiz/react-tiny-toast/issues"
+  },
+  "homepage": "https://github.com/owaiswiz/react-tiny-toast#readme",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [
+    "react",
+    "react-toast-notifications",
+    "react-notifications",
+    "react-tiny-toast",
+    "toast-notifications"
+  ]
+}
