@@ -7,8 +7,7 @@
   "license": "MIT",
   "workspaces": {
     "packages": [
-      "packages/react-tiny-toast",
-      "packages/playground"
+      "packages/react-tiny-toast"
     ]
   }
 }
