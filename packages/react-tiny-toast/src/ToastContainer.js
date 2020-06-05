@@ -11,7 +11,7 @@ const reducer = (state, action) => {
     if(state.filter(i => i.uniqueCode && i.uniqueCode === data.uniqueCode).length) {
       return state;
     }
-    return [...state, data]
+    return [data, ...state]
   } else if(type === REMOVE) {
     return state.filter(i => i.id !== data.id)
   }
