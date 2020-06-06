@@ -3,7 +3,7 @@ Aim of this package is to keep only bundles that are critical to your applicatio
 # bundle size(Minified + Gzipped) <= 1kb
 with its bundle size less than 1kb and custom toast components it add only implementation of toast, but not the styles.
 
-> This is a custom fork of the original react-tiny-toast which removes all base styling from the toast-item container except the animations, reverses the stacking order of toasts.
+> This is a custom fork of the original react-tiny-toast which removes all base styling from the toast-item container except the animations, reverses the stacking order of toasts, and allows using it without explicitly rendering ToastContainer.
 
 # Installation
 Install this package by running on your project root directory.
